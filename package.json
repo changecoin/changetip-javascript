@@ -1,41 +1,49 @@
 {
-    "name": "changetip",
-    "description": "ChangeTip helper library",
-    "version": "0.1.0",
-    "keywords": [
-        "changetip",
-        "bitcoin",
-        "bitcoin tipping",
-        "micropayments"
-    ],
-    "author": { "name" : "Nick Sullivan" },
-    "maintainers": [
-        {
-            "name": "Nick Sullivan",
-            "web": "https://api.changetip.com"
-        }
-    ],
-    "contributors": [
-        {
-            "name": "Nick Sullivan",
-            "web": "https://api.changetip.com"
-        }
-    ],
-    "bugs": "https://github.com/changecoin/changetip-javascript/issues",
-    "licenses": [
-        {
-            "type": "BSD",
-            "url": "https://github.com/changecoin/changetip-javascript/blob/master/LICENSE"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "git://github.com/changecion/changetip-javascript.git"
-        }
-    ],
-    "dependencies": {},
-    "devDependencies": {
-    },
-    "homepage": "https://www.changetip.com"
+  "name": "changetip",
+  "version": "0.1.0",
+  "description": "ChangeTip API for NodeJS",
+  "homepage": "https://www.changetip.com",
+  "author": "Ross Gerbasi",
+  "license": "BSD-2-Clause",
+  "contributors": [
+    {
+      "name": "Ross Gerbasi",
+      "web": "https://rossgerbasi.com"
+    }
+  ],
+  "engines": { "node": "*" },
+  "keywords": [
+    "changetip",
+    "bitcoin",
+    "bitcoin tipping",
+    "micropayments"
+  ],
+  "main": "src/changetip.js",
+  "dependencies": {
+    "moment": "^2.9.0",
+    "q": "^1.1.2"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.3.0-beta1",
+    "mocha": "^2.1.0",
+    "should": "^4.6.2"
+  },
+  "scripts": {
+    "docs": "rm -rf docs; jsdoc --package package.json src -d docs/ --verbose",
+    "test": "mocha --colors -R spec test/specs/*.js",
+    "test-dbg": "node-debug _mocha -R spec test/specs/*.js"
+  },
+  "bugs": "https://github.com/changecoin/changetip-javascript/issues",
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/changecoin/changetip-javascript/blob/master/LICENSE"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/changecion/changetip-javascript.git"
+    }
+  ]
 }
