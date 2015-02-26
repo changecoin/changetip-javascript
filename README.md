@@ -1,21 +1,22 @@
-#ChangeTip API for NodeJS ![CircleCI Build Status](https://circleci.com/gh/changecoin/changetip-javascript.svg?style=shield&circle-token=:circle-token)
+# ChangeTip API for NodeJS ![CircleCI Build Status](https://circleci.com/gh/changecoin/changetip-javascript.svg?style=shield&circle-token=:circle-token)
 Enables easy communication with the ChangeTip API via NodeJS. Allows for sending and retrieving tip information
 
-##Installation
+## Installation
     
     npm install changetip
 
-##Instance Usage
-
-    var ChangeTip = require('changetip'),
+## Instance Usage
+````javascript
+	var ChangeTip = require('changetip'),
     	change_tip = new ChangeTip({api_key:{YOUR_KEY_HERE});
     	
     change_tip.send_tip(uniqueId, sender, receiver, channel, meta).then(function(result) {
     	//Results here from transaction
     });
+````
 
-##Singleton Usage
-
+## Singleton Usage
+````javascript
     var change_tip = require('changetip').getInstance();
 
     //Only needed once
@@ -24,8 +25,9 @@ Enables easy communication with the ChangeTip API via NodeJS. Allows for sending
     change_tip.send_tip(uniqueId, sender, receiver, channel, meta).then(function(result) {
     	//Results here from transaction
     });
+````
 
-##API Development 
+## API Development
 
 1. Clone repo locally
 
@@ -35,11 +37,11 @@ Enables easy communication with the ChangeTip API via NodeJS. Allows for sending
 
 		npm install
 
-##Generating Docs
+## Generating Docs
 	
 	npm run docs
 
-##Running Unit Tests
+## Running Unit Tests
 To run Unit Tests:
 
     npm run test
