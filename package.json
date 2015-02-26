@@ -1,6 +1,6 @@
 {
   "name": "changetip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ChangeTip API for NodeJS",
   "homepage": "https://www.changetip.com",
   "author": "Ross Gerbasi",
@@ -11,7 +11,9 @@
       "web": "https://rossgerbasi.com"
     }
   ],
-  "engines": { "node": "*" },
+  "engines": {
+    "node": "*"
+  },
   "keywords": [
     "changetip",
     "bitcoin",
