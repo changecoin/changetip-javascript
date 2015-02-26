@@ -1,6 +1,6 @@
 {
   "name": "changetip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ChangeTip API for NodeJS",
   "homepage": "https://www.changetip.com",
   "author": "Ross Gerbasi",
